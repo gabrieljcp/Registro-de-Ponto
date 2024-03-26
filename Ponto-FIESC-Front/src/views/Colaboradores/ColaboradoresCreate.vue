@@ -20,6 +20,7 @@ const form = reactive({
     ativo: false,
     data_admissao: "",
     data_rescisao: "",
+    usuario: "",
 })
 
 onMounted(async () => {
@@ -116,8 +117,7 @@ onMounted(async () => {
             <div class="mb-6">
                 <label for="usuario" class="block mb-2 text-sm font-medium text-gray-900">Usuário</label>
                 <input type="text" id="usuario" v-model="form.usuario"
-                    class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                    disabled readonly>
+                    class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
             </div>
             <div class="mb-6">
                 <input id="remember" type="checkbox" value="" v-model="form.telefone"
