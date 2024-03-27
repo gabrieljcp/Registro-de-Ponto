@@ -3,14 +3,18 @@
 
 <template>
   <main>
-    <img src="\src\assets\images\homescreen.webp" alt="FIESC" class="transparent-background">
+    <div>    
+      <img src="\src\assets\images\homescreen.webp" alt="HOME" class="background-image">
+    </div>
   </main>
 </template>
 
 <style>
-.transparent-background {
-  background: transparent;
-  margin: 100px 80px;
+.background-image {
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
 }
 </style>
 
